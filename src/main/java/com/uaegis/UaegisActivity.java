@@ -51,8 +51,7 @@ public class UaegisActivity extends BaseActivity {
 
     private static final UUID uuid = UUID.randomUUID();
     private static final String VERITY_MSG = "<?xml version=\"1.0\" encoding=\"utf-8\"?><T><D><M><k>ID:</k><v>"+uuid.toString()+"</v></M></D></T>";
-
-    private  Intent intent;
+    private Intent intent;
 
     private Handler UI_THREAD_HANDLER = new Handler(Looper.getMainLooper()){
         @Override
@@ -92,6 +91,7 @@ public class UaegisActivity extends BaseActivity {
         }
     };
 
+
     private class VerityExecutor implements AsyncExecutor<String>{
         private NoButtonMessageDialog dialog = new NoButtonMessageDialog(UaegisActivity.this);
         private String psw;
@@ -118,7 +118,6 @@ public class UaegisActivity extends BaseActivity {
 
                 byte[] signature = device.signMessage(certs[0], EsDevice.HASH_ALG_SHA256, msg, "utf-8");
                 dialog.cancel();
-                Log.v("signature", RSACoder.parseByte2HexStr(signature));
                 byte[] certbyte = device.readCert(certs[0]);
 
                 //发送加密后的signature+明文+数字证书到服务器
@@ -398,4 +397,5 @@ public class UaegisActivity extends BaseActivity {
         }
         return super.onPrepareOptionsMenu(menu);
     }
+
 }

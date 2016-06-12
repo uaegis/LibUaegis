@@ -31,8 +31,6 @@ public class RSACoder {
         try {
             publicKey = getPublicKey(key);
             cipher = Cipher.getInstance(ALG_RSA);
-            Log.v("ALG_RSA", publicKey.getAlgorithm());
-
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         } catch (NoSuchPaddingException e) {
