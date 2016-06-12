@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.Light"/>
+
+    <style name="uaegis_main_btn_item">
+        <item name="android:textColor">@drawable/main_btn_item_color_selector</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">@drawable/round_button_bg</item>
+        <item name="android:padding">8.0dip</item>
+        <item name="android:minHeight">32.0dip</item>
+        <item name="android:drawableRight">@mipmap/ic_right_arrow</item>
+    </style>
+</resources>

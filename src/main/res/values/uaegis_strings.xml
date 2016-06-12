@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Uaegis</string>
+    <string name="uaegis_main_label_conn_state">连接状态</string>
+    <string name="uaegis_switch_mode">切换连接方式</string>
+    <string name="uaegis_main_label_not_connected">未连接</string>
+    <string name="uaegis_main_label_verity">验证</string>
+    <string name="uaegis_main_label_verity_certain">确定</string>
+    <string name="uaegis_title_name">U盾验证(%1$s)</string>
+    <string name="uaegis_action_switch">切换至%1$s模式</string>
+    <string name="uaegis_action_start">开始连接</string>
+    <string name="uaegis_action_stop">停止连接</string>
+</resources>
